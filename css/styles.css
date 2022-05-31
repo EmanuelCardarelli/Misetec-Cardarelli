@@ -278,6 +278,7 @@ section{
 
 .lista-servicios-index > li{
 	transition: transform	1s, color 1s;
+	user-select: none;
 }
 
 .lista-servicios-index > li:hover{
@@ -366,6 +367,10 @@ section{
 	url(../img/contacto.png);
 }
 
+.hero-section.sobre-nosotros h1{
+ padding-left: 1rem;
+}
+
 .hero-section h1{
 	color: white;
 	font-size: 3rem;
@@ -406,7 +411,6 @@ section{
 .form-container{
 	width: 80%;
 }
-
 
 
 .form-container label{
