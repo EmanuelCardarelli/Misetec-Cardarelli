@@ -30,6 +30,7 @@ a {
 
 ul{
 	list-style: none;
+	margin-bottom: 0;
 }
 
 
@@ -42,30 +43,6 @@ section{
 	font-weight: 700;
 	color: rgb(18, 18, 18);
 	margin-bottom: 1rem;
-}
-
-/*  */
-.container{
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 1rem;
-}
-/* -------- */
-
-/* Barra de navegacion */
-
-.nav.container{
-	max-width: 90vw;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 1rem 0;
-}
-
-.nav-links{
-	display: flex;
-	gap: 1rem;
-	font-weight: 500;
 }
 
 .nav-links > li{
@@ -87,15 +64,6 @@ section{
 .nav-logo	{
 	animation: fade-in-right .5s;
 }
-
-.navBackground {
-	background-color: rgba(255, 255, 255, 0.73);
-	backdrop-filter: blur(10px);
-	position: sticky;
-	z-index: 1;
-	top: 0px;
-}
-
 
 @media screen and (max-width: 1024px){
 	.nav.container{
@@ -169,11 +137,11 @@ section{
 /* Tabla productos */
 
 
-.products-grid{
+/* .products-grid{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 2rem;
-}
+} */
 
 .product-card{
 	border: 1px solid rgb(236, 236, 236);
@@ -249,12 +217,12 @@ section{
 	background-color: rgb(243, 243, 243);
 }
 
-.servicios{
+/* .servicios{
 	display: grid;
 	gap: 2rem;
 	grid-template-columns:  repeat(2,1fr);
 	align-items: center;
-}
+} */
 
 .servicios aside{
 	font-size: 2rem;
