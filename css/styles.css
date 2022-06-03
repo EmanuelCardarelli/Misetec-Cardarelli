@@ -348,7 +348,7 @@ section{
 
 /*  Pagina sobre nosotros */
 
-.container.sobre-nosotros{
+/* .container.sobre-nosotros{
 	display: flex;
 	gap: 1rem;
 }
@@ -357,7 +357,7 @@ section{
 	.container.sobre-nosotros{
 		flex-direction: column;
 	}
-}
+} */
 
 .container.sobre-nosotros .titulo-h2{
 	max-width: 40ch;
@@ -369,17 +369,12 @@ section{
 	max-width: 60ch;
 }
 
-/* Pagina Nosotros */
+/* Pagina contacto */
 
 .container.formulario-contacto{
 	display: flex;
 	justify-content: center;
 }
-
-.form-container{
-	width: 80%;
-}
-
 
 .form-container label{
 	display: block;
