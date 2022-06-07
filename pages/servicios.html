@@ -8,72 +8,110 @@
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
     <title>Servicios</title>
     <link href="https://fonts.google.com/specimen/Montserrat?query=mon" rel="stylesheet">
-     <!-- Linkear Boostrap -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Linkear Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- linkear nuestro css -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-     <!-- fila de logo + nav -->
-     <header class="bg-light sticky-top">
-        <nav class="container navbar navbar-expand-lg navbar-light">
-          <a class="nav-logo" href="/index.html"><img src="/img/logo.png" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./servicios.html">SERVICIOS</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./productos.html">PRODUCTOS</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./nosotros.html">NOSOTROS</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./contacto.html">CONTACTO</a></li>
-              </ul>
-          </div>
-         
-        </nav>
-      </header>
-    <!-- cierre de fila logo + nav -->
-    <section>
-        <article class="container">
-            <h1>Servicios</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=WWUoq4RtHV0"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </article>
-    </section>
-    <section>
-        <article class="container servicios">
-            <div class="row">
-                <aside class="col-md">
-                    <h2 class="titulo-h2">Algunos de <br> nuestros servicios</h2>
-                    <p>Somos expertos en reparación de PC's y Notebooks, brindamos soporte técnico informático especializado.</p>
-                </aside>
-                <ul class="lista-servicios-index col-md ml-3">
-                    <li>Soporte Técnico</li>
-                    <li>Soporte Remoto</li>
-                    <li>Análisis y limpieza de Virus</li>
-                    <li>Mantenimiento Hardware</li>
-                    <li>Cámaras de seguridad</li>
-                </ul>
+    <header class="bg-light sticky-top">
+        <nav class="container navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="nav-logo" href="../index.html"><img src="/img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./servicios.html">SERVICIOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./productos.html">PRODUCTOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./nosotros.html">NOSOTROS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>
             </div>
-        </article>
+        </nav>
+    </header>
+    <!-- cierre de fila logo + nav -->
+    <section id="lista-servicios">
+        <div class="container px-4" id="featured-3">
+            <h2 class="pb-2 border-bottom ">Nuestros servicios</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center rounded-3 fs-2 mb-3">
+                    <i class='bx bx-error' ></i>
+                </div>
+                <h2>Fallos sistema operativo</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Reparación de computadoras y notebooks</li>
+                    <li class="list-group-item">Problemas de arranque y fallos en el sistema operativo</li>
+                    <li class="list-group-item">Problemas de imcompatibilidades de software y drivers</li>
+                    <li class="list-group-item">Desconexiones de red tras actualizaciones</li>
+                </ul>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center rounded-3 fs-2 mb-3">
+                    <i class='bx bxl-windows' ></i>
+                </div>
+                <h2>Formateo y reinstalación</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Formateo de PC y Notebooks</li>
+                    <li class="list-group-item">Reinstalación de sistema operativo</li>
+                    <li class="list-group-item">Instalación de software base</li>
+                    <li class="list-group-item">Backup de datos de usuario para que no pierdas navegadores</li>
+                </ul>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center rounded-3 fs-2 mb-3">
+                    <i class='bx bxs-virus'></i>
+                </div>
+                <h2>Reparaciones hardware</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Reparación y sustitución de componentes</li>
+                    <li class="list-group-item">Reparación de dispositivos con problemas de encendido</li>
+                    <li class="list-group-item">Sustitución de fuentes de alimentación</li>
+                    <li class="list-group-item">Remplazo de discos rígidos, memorias ram, motherboards y tarjetas de videos</li>
+                </ul>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center rounded-3 fs-2 mb-3">
+                    <i class='bx bx-laptop' ></i>
+                </div>
+                <h2 class="mb-lg-5">Problemas de virus</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Reparación de computadoras con problemas de virus</li>
+                    <li class="list-group-item">Problemas de lentitud por acumulación de malwares</li>
+                    <li class="list-group-item">Eliminación de ventanas emergentes en navegadores y fallos en el arranque</li>
+                    <li class="list-group-item">Reparación de PC tras ataques de troyanos</li>
+                </ul>
+              </div>
+            </div>
     </section>
     <!-- inicio de footer -->
-    <footer class="footer container">
-        <a href="../index.html"><img src="/img/logo.png" alt="logo">
-        </a>
-        <span>Copyright © 2022 - Misetec | Soluciones informáticas</span>
+    <footer class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">&copy; 2022 - Misetec | Soluciones informáticas</p>
+        
+            <a href="/index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img src="/img/logo.png" alt="logo" class="footer-logo">
+            </a>
+        
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+                <li class="nav-item"><a href="/pages/servicios.html" class="nav-link px-2 text-muted">Servicios</a></li>
+                <li class="nav-item"><a href="/pages/productos.html" class="nav-link px-2 text-muted">Productos</a></li>
+                <li class="nav-item"><a href="/pages/nosotros.html" class="nav-link px-2 text-muted">Nosotros</a></li>
+                <li class="nav-item"><a href="/pages/contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+            </ul>
+        </footer>
     </footer>
     
     <!-- Boostrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>

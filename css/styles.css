@@ -8,7 +8,7 @@
 }
 
 html{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif; 
 	/* Establecemos la misma fuente para toda la pagina */
 }
 
@@ -36,6 +36,25 @@ ul{
 
 section{
 	padding: 10rem 0;
+}
+
+
+.btn-primary{
+	background: green;
+}
+.btn-primary:hover{
+	background-color: rgb(2, 104, 2);
+}
+.btn-primary:active{
+	background: green;
+}
+.btn-primary:focus{
+	background: green;
+	outline: green;
+}
+
+.bg-primary{
+	background: green;
 }
 
 .titulo-h2{
@@ -81,9 +100,7 @@ section{
 }
 
 /* Portada */
-
 .parallax {
-
 	/* The image used */
 	background-image: 
 	linear-gradient( 180deg, rgba(0,0,0,.9) 30%, rgba(0,0,0,.5)),
@@ -109,7 +126,7 @@ section{
 	animation: fade-in-top 1.5s;
 }
 
-.parallax h4 {
+.parallax h1 {
 	font-size: 4rem;
 	margin-bottom: 1rem;
 	/* Aplica el margen solo debajo del elemento */
@@ -121,27 +138,19 @@ section{
 }
 
 @media screen and (max-width: 768px){
-	
-.parallax h4 {
-	font-size: 2rem;
-	margin-bottom: 1rem;
-	/* Aplica el margen solo debajo del elemento */
-}
+	.parallax h1 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		/* Aplica el margen solo debajo del elemento  */
+	}
 
-.parallax p {
-	font-size: 1.2rem;
-}
-}
-
-
-/* Tabla productos */
+	.parallax p {
+		font-size: 1.2rem;
+	}
+} 
 
 
-/* .products-grid{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 2rem;
-} */
+/* grid productos */
 
 .product-card{
 	border: 1px solid rgb(236, 236, 236);
@@ -192,23 +201,22 @@ section{
 	margin-bottom: 2rem;
 }
 
-/* virus arranque */
-.virus,
-.arranque {
-	padding: 5rem 0;
-	text-align: center;
+/* Contactanos call to action */
+#soporte > div {
+	background-image: 
+		linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)), 
+		url('/img/contact-us.png');
+	background-position: center center;
+	background-size: cover;
+	color: white;
 }
 
-.virus {
-	width: 100%;
-	background-color: rgba(146, 167, 153, 0.466);
-	position: relative;
-}
+/* Seccion Opiniones */
 
-.arranque {
-	width: 100%;
-	background-color: rgba(74, 216, 121, 0.466);
-	position: relative;
+#opiniones .card-img{
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
 }
 
 /* Servicios */
@@ -216,13 +224,6 @@ section{
 #servicios{
 	background-color: rgb(243, 243, 243);
 }
-
-/* .servicios{
-	display: grid;
-	gap: 2rem;
-	grid-template-columns:  repeat(2,1fr);
-	align-items: center;
-} */
 
 .servicios aside{
 	font-size: 2rem;
@@ -254,7 +255,6 @@ section{
 	color: rgb(25, 117, 25);
 }
 
-
 @media screen and ( max-width: 768px){
 	.servicios{
 		gap: 2rem;
@@ -276,6 +276,9 @@ section{
 	padding: 1.5rem;
 }
 
+.footer-logo{
+	width: 6rem;
+}
 
 @media screen and ( max-width: 768px){
 	.footer {
@@ -285,9 +288,7 @@ section{
 	}
 }
 
-
 /* Estilos pagina productos */
-
 .tabla{
 	width: 100%;
 	border: 1px solid grey;
@@ -327,12 +328,15 @@ section{
 	background-image: 
 	linear-gradient( 180deg, rgba(0,0,0,.5) 30%, rgba(0,0,0,.5)),
 	url(../img/nosotros.png);
+	background-position: center 20%;
 }
 
 .hero-section.contacto{
 	background-image: 
 	linear-gradient( 180deg, rgba(0,0,0,.5) 30%, rgba(0,0,0,.5)),
 	url(../img/contacto.png);
+	background-position: center;
+	background-size: cover;
 }
 
 .hero-section.sobre-nosotros h1{
@@ -345,75 +349,71 @@ section{
 	animation: fade-in-top 1s;
 }
 
+/* categories-grid */
 
-/*  Pagina sobre nosotros */
-
-/* .container.sobre-nosotros{
-	display: flex;
-	gap: 1rem;
+#categories-grid > div > div{
+	background-position: center center;
+	background-size: cover;
+	transition: transform .5s;
 }
 
-@media screen and (max-width: 768px){
-	.container.sobre-nosotros{
-		flex-direction: column;
-	}
-} */
+#categories-grid > div > div:hover{
+	transform: scale(1.05);
+	box-shadow:
+  0px 2.3px 2.7px rgba(0, 0, 0, 0.108),
+  0px 6.3px 7.5px rgba(0, 0, 0, 0.155),
+  0px 15.1px 18.1px rgba(0, 0, 0, 0.202),
+  0px 50px 60px rgba(0, 0, 0, 0.31)
+;
+}
+
+#categories-grid > div:nth-child(1) > div{
+	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
+	url('/img/componentes.png');
+}
+#categories-grid > div:nth-child(2) > div{
+	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
+	url('/img/audio.png');
+}
+#categories-grid > div:nth-child(3) > div{
+	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
+	url('/img/perifericos.png');
+}
+#categories-grid > div:nth-child(4) > div{
+	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
+	url('/img/almacenamiento.png');
+}
+#categories-grid > div:nth-child(5) > div{
+	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
+	url('/img/conectividad.png');
+}
+#categories-grid > div:nth-child(6) > div{
+	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
+	url('/img/energia.png');
+}
+#categories-grid > div:nth-child(7) > div{
+	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
+	url('/img/seguridad.png');
+}
+
+/* Pagina servicios */
+
+.feature-icon{
+	background: #2E8B57;
+	color: white;
+	padding: .6rem;
+}
+/*  Pagina sobre nosotros */
 
 .container.sobre-nosotros .titulo-h2{
 	max-width: 40ch;
 }
+
 .container.sobre-nosotros p{
 	line-height: 1.5;
 	color: grey;
 	font-size: 1.2rem;
 	max-width: 60ch;
-}
-
-/* Pagina contacto */
-
-.container.formulario-contacto{
-	display: flex;
-	justify-content: center;
-}
-
-.form-container label{
-	display: block;
-	margin-bottom: .5rem;
-}
-
-.form-container input,
-.form-container textarea{
-	font-size: inherit;
-	outline: none;
-	transition: border 1s ;
-	padding: .5rem;
-}
-
-.form-container input{
-	height: 2.5rem;
-	width: 100%;
-	margin-bottom: .5rem;
-}
-
-.form-container input:focus,
-.form-container textarea:focus{
-	border: 2px solid rgb(44, 159, 44);
-}
-
-.form-container textarea{
-	width: 100%;
-	margin-bottom: 1rem;
-}
-
-.form-container div{
-	margin-top: 1rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.form-container div input{
-	flex-basis: 4rem;
 }
 
 /*  Animaciones */
