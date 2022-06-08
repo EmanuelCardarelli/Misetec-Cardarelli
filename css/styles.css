@@ -205,7 +205,7 @@ section{
 #soporte > div {
 	background-image: 
 		linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)), 
-		url('/img/contact-us.png');
+		url('../img/contact-us.png');
 	background-position: center center;
 	background-size: cover;
 	color: white;
@@ -369,31 +369,31 @@ section{
 
 #categories-grid > div:nth-child(1) > div{
 	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
-	url('/img/componentes.png');
+	url('../img/componentes.png');
 }
 #categories-grid > div:nth-child(2) > div{
 	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
-	url('/img/audio.png');
+	url('../img/audio.png');
 }
 #categories-grid > div:nth-child(3) > div{
 	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
-	url('/img/perifericos.png');
+	url('../img/perifericos.png');
 }
 #categories-grid > div:nth-child(4) > div{
 	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
-	url('/img/almacenamiento.png');
+	url('../img/almacenamiento.png');
 }
 #categories-grid > div:nth-child(5) > div{
 	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
-	url('/img/conectividad.png');
+	url('../img/conectividad.png');
 }
 #categories-grid > div:nth-child(6) > div{
 	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
-	url('/img/energia.png');
+	url('../img/energia.png');
 }
 #categories-grid > div:nth-child(7) > div{
 	background-image: linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)),
-	url('/img/seguridad.png');
+	url('../img/seguridad.png');
 }
 
 /* Pagina servicios */
