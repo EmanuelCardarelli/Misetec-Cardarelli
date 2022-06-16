@@ -1,6 +1,21 @@
 $color-principal: #2E8B57;
+$color-secundario: #2e8b89;
 $color-texto: rgb(91, 104, 137);
 $color-bg: rgb(243, 243, 243);
 
-
-$imagenes-categorias-prod: ("componentes": '/img/componentes.png', "audio": '/img/audio.png', "perifericos": '/img/perifericos.png', "almacenamiento": '/img/almacenamiento.png', "conectividad": '/img/conectividad.png', "energia": '/img/energia.png', "seguridad":'/img/seguridad.png' );
+$imagenes-secciones: (
+  "productos": '../img/productos.png',
+  "nosotros": '../img/nosotros.png',
+  "contacto": '../img/contacto.png',
+  "support": '../img/contact-us.png'
+);
+  
+$imagenes-categorias-prod: (
+  "componentes": '../img/componentes.png', 
+  "audio": '../img/audio.png', 
+  "perifericos": '../img/perifericos.png', 
+  "almacenamiento": '../img/almacenamiento.png', 
+  "conectividad": '../img/conectividad.png', 
+  "energia": '../img/energia.png', 
+  "seguridad":'../img/seguridad.png'
+);

@@ -30,32 +30,63 @@ a {
 	color: inherit;
 }
 
-ul{
+@mixin reset-listas{
 	list-style: none;
-	margin-bottom: 0;
+	margin: 0;
+	padding: 0;
 }
 
+ul{
+	@include reset-listas;
+}
 
 section{
 	padding: 10rem 0;
 }
 
+.button{
+	border: none;
+	outline: none;
+	padding: .5rem 1.25rem;
+	border-radius: .2rem;
+	font-family: inherit;
+	font-size: inherit;
+	background: black;
+	color: white;
 
-.btn-primary{
+	&:hover{
+		opacity: .85;
+	}
+
+	&:focus{
+		border: lightgray;
+	}
+}
+
+.button--primary{
+	@extend .button;
 	background: $color-principal;
+	&:hover{
+		color: white;
+	}
+}
 
-  &:hover{
-    background-color: $color-principal;
-  }
+.button--secondary{
+	@extend .button;
+	background: $color-bg;
+	color: black;
+	&:hover{
+		color: black;
+	}
+}
 
-  &:active{
-    background: $color-principal;
-  }
-
-  &focus:focus{
-    background: $color-principal;
-    outline: $color-principal;
-  }
+.button--no-bg{
+	@extend .button;
+	background: transparent;
+	color: white;
+	&:hover{
+		color: inherit;
+	}
 }
 
 .titulo-h2{
@@ -65,20 +96,23 @@ section{
 	margin-bottom: 1rem;
 }
 
-.nav-links > li{
-	border: 1px solid transparent;
+.nav-links{
+	li{
+		border: 1px solid transparent;
+
+		a{
+			padding: 10px 20px;
+			transition: all 1s;
+
+			&:hover{
+				background: rgb(247, 247, 247);
+				color: rgb(43, 124, 43);
+				font-weight: 600;
+			}
+		}
+	}
 }
 
-.nav-links > li > a{
-	padding: 10px 20px;
-	transition: all 1s;
-}
-
-.nav-links > li > a:hover{
-	background: rgb(247, 247, 247);
-	color: rgb(43, 124, 43);
-	font-weight: 600;
-}
 
 .nav-links,
 .nav-logo	{
@@ -211,7 +245,7 @@ section{
   div{ 
     background-image: 
       linear-gradient( 180deg, rgba(0,0,0,.6) 50%, rgba(0,0,0,.6)), 
-      url('/img/contact-us.png');
+      url(map-get($imagenes-secciones, support));
     background-position: center center;
     background-size: cover;
     color: white;
@@ -252,16 +286,16 @@ section{
 	font-size: 1.25rem;
 	padding-left: 1rem;
 	border-left: 2px solid rgb(162, 181, 163);
-}
 
-.lista-servicios-index > li{
-	transition: transform	1s, color 1s;
-	user-select: none;
-}
+	li{
+		transition: transform	1s, color 1s;
+		user-select: none;
 
-.lista-servicios-index > li:hover{
-	transform: translateX(.5rem);
-	color: rgb(25, 117, 25);
+		&:hover{
+			transform: translateX(.5rem);
+			color: rgb(25, 117, 25);
+		}
+	}
 }
 
 @media screen and ( max-width: 768px){
@@ -329,20 +363,20 @@ section{
 .hero-section.productos{
 	background-image: 
 	linear-gradient( 180deg, rgba(0,0,0,.5) 30%, rgba(0,0,0,.5)),
-	url(../img/productos.png);
+	url(map-get($imagenes-secciones, productos));
 }
 
 .hero-section.sobre-nosotros{
 	background-image: 
 	linear-gradient( 180deg, rgba(0,0,0,.5) 30%, rgba(0,0,0,.5)),
-	url(../img/nosotros.png);
+	url(map-get($imagenes-secciones, nosotros));
 	background-position: center 20%;
 }
 
 .hero-section.contacto{
 	background-image: 
 	linear-gradient( 180deg, rgba(0,0,0,.5) 30%, rgba(0,0,0,.5)),
-	url(../img/contacto.png);
+	url(map-get($imagenes-secciones, contacto));
 	background-position: center;
 	background-size: cover;
 }
@@ -388,11 +422,22 @@ section{
 
 /* Pagina servicios */
 
-.feature-icon{
+#services{
+	animation: fade-in-top 1s;
+}
+
+.service-icon{
+	padding: .6rem;
+	background: lightgrey;
+	color: grey;
+}
+
+.service-icon--primary{
+	@extend .service-icon;
 	background: $color-principal;
 	color: white;
-	padding: .6rem;
 }
+
 /*  Pagina sobre nosotros */
 
 .container.sobre-nosotros .titulo-h2{
