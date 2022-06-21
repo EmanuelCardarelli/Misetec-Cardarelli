@@ -254,10 +254,12 @@ section{
 
 /* Seccion Opiniones */
 
-#opiniones .card-img{
-	height: 3rem;
-	width: 3rem;
-	border-radius: 50%;
+#opiniones{
+	.card-img{
+		height: 3rem;
+		width: 3rem;
+		border-radius: 50%;
+	}
 }
 
 /* Servicios */
@@ -269,13 +271,12 @@ section{
 .servicios{
   aside{
     font-size: 2rem;
+		p{
+			font-size: 1.25rem;
+			max-width: 40ch;
+			color: grey;
+		}
   }
-}
-
-.servicios aside p{
-	font-size: 1.25rem;
-	max-width: 40ch;
-	color: grey;
 }
 
 .lista-servicios-index{
@@ -440,17 +441,18 @@ section{
 
 /*  Pagina sobre nosotros */
 
-.container.sobre-nosotros .titulo-h2{
-	max-width: 40ch;
-}
+.container.sobre-nosotros{
+	.titulo-h2{
+		max-width: 40ch;
+	}
 
-.container.sobre-nosotros p{
-	line-height: 1.5;
-	color: $color-texto;
-	font-size: 1.2rem;
-	max-width: 60ch;
+	p{
+		line-height: 1.6;
+		color: $color-texto;
+		font-size: 1.2rem;
+		max-width: 60ch;
+	}
 }
-
 /*  Animaciones */
 
 @keyframes fade-in-top{
